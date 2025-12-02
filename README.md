@@ -160,6 +160,7 @@ Educational Use Only - Created for academic purposes
 
 **Created By**: Anthony D.  
 **Date**: 4-15-25
+
 **Purpose**: Educational project demonstrating frontend web development skills
 
 ---
