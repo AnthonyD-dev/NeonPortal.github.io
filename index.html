@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NeonPortal | URL Opener</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">
+                <div class="logo-icon">
+                    <i class="fas fa-rocket"></i>
+                </div>
+                <div>
+                    <div class="logo-text">NeonPortal</div>
+                    <div class="tagline">Quick URL Access</div>
+                </div>
+            </div>
+            
+            <nav>
+                <ul>
+                    <li><a href="#" class="active" id="navHome"><i class="fas fa-home"></i> Home</a></li>
+                    <li><a href="#" id="navGames"><i class="fas fa-gamepad"></i> Games</a></li>
+                    <li><a href="#" id="navStudy"><i class="fas fa-book"></i> Study</a></li>
+                    <li><a href="#" id="navTools"><i class="fas fa-tools"></i> Tools</a></li>
+                </ul>
+            </nav>
+        </header>
+        
+        <main>
+            <section class="hero">
+                <h1>Quick Website Access</h1>
+                <p>Enter any website URL below. We'll open it in a new tab with enhanced access.</p>
+                
+                <div class="url-section">
+                    <h2><i class="fas fa-link"></i> Enter Website URL</h2>
+                    
+                    <div class="url-input-group">
+                        <input type="text" class="url-input" id="urlInput" 
+                               placeholder="example.com or https://example.com"
+                               value="https://coolmathgames.com">
+                        <button class="btn" id="openBtn">
+                            <i class="fas fa-external-link-alt"></i> Open Site
+                        </button>
+                    </div>
+                    
+                    <div class="tag-section">
+                        <h3><i class="fas fa-tag"></i> Access Method</h3>
+                        <div class="tag-buttons">
+                            <button class="tag-btn active" data-tag="?host=1yh71uwZQTsGkEO&magicunblock=www.wi.k12.ny.us%TAK%d%U">
+                                <i class="fas fa-unlock"></i> Bypass
+                            </button>
+                            <button class="tag-btn" data-tag="?mode=light">
+                                <i class="fas fa-sun"></i> Light Mode
+                            </button>
+                            <button class="tag-btn" data-tag="?mobile=1">
+                                <i class="fas fa-mobile-alt"></i> Mobile View
+                            </button>
+                            <button class="tag-btn" data-tag="?cache=refresh">
+                                <i class="fas fa-sync-alt"></i> No Cache
+                            </button>
+                        </div>
+                        
+                        <div class="custom-tag">
+                            <input type="text" id="customTag" placeholder="Custom tag: ?custom=value">
+                            <button class="btn-small" id="applyCustomTag">
+                                <i class="fas fa-check"></i> Apply
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <div class="shortcuts">
+                        <h3><i class="fas fa-bolt"></i> Quick Access</h3>
+                        <div class="shortcut-grid">
+                            <button class="shortcut-btn" data-url="https://coolmathgames.com">
+                                <i class="fas fa-gamepad"></i> Cool Math Games
+                            </button>
+                            <button class="shortcut-btn" data-url="https://poki.com">
+                                <i class="fas fa-dice"></i> Poki Games
+                            </button>
+                            <button class="shortcut-btn" data-url="https://youtube.com">
+                                <i class="fab fa-youtube"></i> YouTube
+                            </button>
+                            <button class="shortcut-btn" data-url="https://discord.com">
+                                <i class="fab fa-discord"></i> Discord
+                            </button>
+                            <button class="shortcut-btn" data-url="https://google.com">
+                                <i class="fab fa-google"></i> Google
+                            </button>
+                            <button class="shortcut-btn" data-url="https://github.com">
+                                <i class="fab fa-github"></i> GitHub
+                            </button>
+                            <button class="shortcut-btn" data-url="https://reddit.com">
+                                <i class="fab fa-reddit"></i> Reddit
+                            </button>
+                            <button class="shortcut-btn" data-url="https://spotify.com">
+                                <i class="fab fa-spotify"></i> Spotify
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <div class="status">
+                        <div class="status-indicator">
+                            <span class="status-dot active"></span>
+                            <span id="statusText">Ready to open websites</span>
+                        </div>
+                        <div class="history-info">
+                            <i class="fas fa-history"></i>
+                            <span id="historyCount">0 sites opened</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <section class="recent-section">
+                <h2><i class="fas fa-clock"></i> Recently Opened</h2>
+                <div class="recent-list" id="recentList">
+                    <!-- Recently opened sites will appear here -->
+                    <div class="empty-state">
+                        <i class="fas fa-globe-americas"></i>
+                        <p>No sites opened yet. Try opening one above!</p>
+                    </div>
+                </div>
+            </section>
+            
+            <section class="info-section">
+                <div class="info-card">
+                    <i class="fas fa-lightbulb"></i>
+                    <h3>How It Works</h3>
+                    <p>This tool opens websites in new tabs with special parameters that can sometimes help bypass restrictions or modify how sites load.</p>
+                </div>
+                <div class="info-card">
+                    <i class="fas fa-exclamation-triangle"></i>
+                    <h3>Important Note</h3>
+                    <p>This is an educational project. Always respect your school's network policies and only access permitted websites.</p>
+                </div>
+                <div class="info-card">
+                    <i class="fas fa-code"></i>
+                    <h3>Technical Details</h3>
+                    <p>Built with vanilla HTML, CSS, and JavaScript. No proxies or servers needed - everything runs in your browser.</p>
+                </div>
+            </section>
+        </main>
+        
+        <footer>
+            <div class="footer-content">
+                <p>NeonPortal &copy; 2023 | Educational Web Project</p>
+                <p class="tech-info">
+                    <i class="fas fa-graduation-cap"></i> School Project | 
+                    <i class="fas fa-code"></i> HTML/CSS/JS | 
+                    <i class="fas fa-check-circle"></i> Working Solution
+                </p>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Notification Container -->
+    <div id="notificationContainer"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
