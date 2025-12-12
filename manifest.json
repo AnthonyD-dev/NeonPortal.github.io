@@ -1,0 +1,22 @@
+{
+  "name": "Neon Portal",
+  "short_name": "NeonPortal",
+  "start_url": "/NeonPortal.github.io/",
+  "scope": "/NeonPortal.github.io?host=1yh71uwZQTsGkEO&magicunblock=www.wi.k12.ny.us%25TAK%25d%25U",
+  "display": "standalone",
+  "background_color": "#000000",
+  "theme_color": "#00ffff",
+  "description": "A neon-themed web portal.",
+  "icons": [
+    {
+      "src": "icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
