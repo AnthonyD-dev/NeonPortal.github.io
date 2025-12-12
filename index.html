@@ -6,6 +6,10 @@
     <title>NeonPortal | URL Opener</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#00ffff">
+    <link rel="icon" href="icons/icon-192.png">
+
 </head>
 <body>
     <div class="container">
@@ -19,7 +23,7 @@
                     <div class="tagline">Quick URL Access</div>
                 </div>
             </div>
-            
+            <!-- 
             <nav>
                 <ul>
                     <li><a href="#" class="active" id="navHome"><i class="fas fa-home"></i> Home</a></li>
@@ -27,7 +31,7 @@
                     <li><a href="#" id="navStudy"><i class="fas fa-book"></i> Study</a></li>
                     <li><a href="#" id="navTools"><i class="fas fa-tools"></i> Tools</a></li>
                 </ul>
-            </nav>
+            </nav> -->
         </header>
         
         <main>
@@ -161,5 +165,13 @@
     <div id="notificationContainer"></div>
 
     <script src="script.js"></script>
+    <script>
+  if ("serviceWorker" in navigator) {
+    navigator.serviceWorker.register("service-worker.js")
+      .then(() => console.log("Service worker registered"))
+      .catch(err => console.error("Service worker registration failed:", err));
+  }
+</script>
+
 </body>
 </html>
